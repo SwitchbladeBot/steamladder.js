@@ -31,11 +31,6 @@ Docma.create().build({
       title: Package.name,
       navItems: [
         {
-          label: 'Documentation',
-          href: '?api=steamladder',
-          iconClass: 'fas fa-book'
-        },
-        {
           iconClass: 'fab fa-lg fa-github',
           label: 'GitHub',
           href: 'https://github.com/SwitchbladeBot/steamladder.js',
