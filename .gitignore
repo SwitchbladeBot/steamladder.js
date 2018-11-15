@@ -62,3 +62,6 @@ typings/
 
 # JetBrains stuff
 .idea/
+
+# Docma build folder
+docs/
