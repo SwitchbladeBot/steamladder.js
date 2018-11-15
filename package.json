@@ -1,6 +1,6 @@
 {
   "name": "steamladder",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Node.js wrapper for the Steam Ladder API",
   "main": "index.js",
   "scripts": {
