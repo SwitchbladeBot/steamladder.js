@@ -10,7 +10,7 @@
     <a href="https://david-dm.org/SwitchbladeBot/steamladder.js?type=dev"><img src="https://david-dm.org/SwitchbladeBot/steamladder.js/dev-status.svg?style=flat-square"/></a>
   </p>
   
-  `npm install crowdin.js`
+  `npm install steamladder`
   
   <a href="http://steamladder.switchblade.xyz/">Read the documentation</a>
 </div>
