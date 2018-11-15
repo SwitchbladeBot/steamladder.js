@@ -24,7 +24,7 @@ Docma.create().build({
   },
   src: [
     { readme: './README.md' },
-    { fnbrco: './lib/*.js' }
+    { steamladder: './lib/*.js' }
   ],
   dest: './docs',
   template: {
