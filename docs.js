@@ -37,13 +37,13 @@ Docma.create().build({
         },
         {
           label: 'Documentation',
-          href: '?api=fnbrco',
+          href: '?api=steamladder',
           iconClass: 'fas fa-book'
         },
         {
           iconClass: 'fab fa-lg fa-github',
-          label: '',
-          href: 'https://github.com/SwitchbladeBot/fnbrco.js',
+          label: 'GitHub',
+          href: 'https://github.com/SwitchbladeBot/steamladder.js',
           target: '_blank'
         }
       ]
