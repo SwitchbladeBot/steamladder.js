@@ -7,7 +7,7 @@ Docma.create().build({
   app: {
     title: Package.name,
     base: '/',
-    entrance: 'content:readme',
+    entrance: 'api:steamladder',
     routing: 'query',
     server: Docma.ServerType.STATIC
   },
@@ -23,7 +23,6 @@ Docma.create().build({
     emoji: true
   },
   src: [
-    { readme: './README.md' },
     { steamladder: './lib/*.js' }
   ],
   dest: './docs',
@@ -31,10 +30,6 @@ Docma.create().build({
     options: {
       title: Package.name,
       navItems: [
-        {
-          label: 'Home',
-          href: '?content=readme'
-        },
         {
           label: 'Documentation',
           href: '?api=steamladder',
