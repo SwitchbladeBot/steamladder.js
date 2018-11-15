@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.imgur.com/uvdMEwH.png"><br>
+  <img src="https://i.imgur.com/LY3adQk.png"><br>
   <b>Node.js wrapper for the <a href="https://steamladder.com/">Steam Ladder</a> API</b>
   <br><br>
   <p>
