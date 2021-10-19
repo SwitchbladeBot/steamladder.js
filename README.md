@@ -5,11 +5,13 @@
   <p>
     <a href="https://netlify.com/"><img src="https://i.imgur.com/oJjg6fA.png" alt="Documentation deployed by Netlify" width="128" height="24"></a>
     <br>
-        <a href="https://discord.gg/PwWJRsc" target="_blank"><img src="https://img.shields.io/badge/dynamic/json.svg?style=flat-square&label=chat%20on%20Discord&colorB=7289DA&url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Fservers%2F445203868624748555%2Fembed.json&query=%24.members.length&suffix=%20online&logo=discord" alt="Discord Server"/></a>
-        <a href="https://github.com/SwitchbladeBot/steamladder.js/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/SwitchbladeBot/steamladder.js.svg?style=flat-square" alt="License"/></a>
-        <a href="https://travis-ci.org/SwitchbladeBot/steamladder.js" target="_blank"><img src="https://img.shields.io/travis/SwitchbladeBot/steamladder.js.svg?style=flat-square&logo=travis" alt="Travis CI Build Status"/></a>
-        <a title="Dependencies" target="_blank" href="https://david-dm.org/SwitchbladeBot/steamladder.js/"><img src="https://david-dm.org/SwitchbladeBot/steamladder.js/status.svg?style=flat-square"></a>
-    <a href="https://npmjs.com/package/steamladder"><img src="https://img.shields.io/npm/v/steamladder.svg?style=flat-square"/></a>
+        <a href="https://discord.gg/PwWJRsc" target="_blank"><img src="https://img.shields.io/discord/445203868624748555?color=blue&logo=discord&logoColor=white" alt="Discord Server"/></a>
+        <a href="https://github.com/SwitchbladeBot/switchblade/actions?query=workflow%3ACI" target="_blank"><img src="https://github.com/SwitchbladeBot/steamladder.js/workflows/CI/badge.svg" alt="CI Testing"/></a>
+        <a href="https://github.com/SwitchbladeBot/steamladder.js/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/SwitchbladeBot/steamladder.js.svg" alt="License"/></a>
+        <a href="https://opencollective.com/switchblade#backer" target="_blank"><img src="https://opencollective.com/switchblade/tiers/backer/badge.svg?label=backers&color=brightgreen" alt="Backers"/></a>
+        <a href="https://opencollective.com/switchblade#sponsor" target="_blank"><img src="https://opencollective.com/switchblade/tiers/sponsor/badge.svg?label=sponsors&color=brightgreen" alt="Sponsors"/></a>
+        <a href="https://github.com/SwitchbladeBot/steamladder.js/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest" target="_blank"><img src="https://img.shields.io/static/v1?label=hacktoberfest&message=friendly&color=success" alt="Hacktoberfest"/></a>
+    <a href="https://npmjs.com/package/steamladder"><img src="https://img.shields.io/npm/v/steamladder.svg"/></a>
   </p>
   
   `npm install steamladder`
