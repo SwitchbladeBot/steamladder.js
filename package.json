@@ -24,17 +24,17 @@
     "url": "https://github.com/SwitchbladeBot/steamladder.js/issues"
   },
   "devDependencies": {
-    "docma": "^2.1.0",
-    "dotenv": "^6.0.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^8.0.0",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "standard": "^12.0.1"
+    "docma": "^3.2.2",
+    "dotenv": "^10.0.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^4.1.0",
+    "standard": "^16.0.4"
   },
   "dependencies": {
-    "node-fetch": "^2.3.0"
+    "axios": "^0.23.0"
   },
   "homepage": "https://steamladder.switchblade.xyz/"
 }
