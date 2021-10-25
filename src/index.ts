@@ -11,6 +11,8 @@ export {
 }
 
 // Types
+export * from './types/Ladder'
 export * from './types/LadderRank'
+export * from './types/LadderSteamStats'
 export * from './types/Profile'
 export * from './types/SteamStats'
