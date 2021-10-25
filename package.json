@@ -2,8 +2,10 @@
   "name": "steamladder",
   "version": "1.0.7",
   "description": "Node.js wrapper for the Steam Ladder API",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "lint": "eslint src/**/*.ts"
   },
   "keywords": [
@@ -22,6 +24,9 @@
   "bugs": {
     "url": "https://github.com/SwitchbladeBot/steamladder.js/issues"
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "axios": "^0.23.0"
   },

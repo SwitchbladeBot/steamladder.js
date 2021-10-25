@@ -65,3 +65,6 @@ typings/
 
 # Docma build folder
 docs/
+
+# Build
+dist/
