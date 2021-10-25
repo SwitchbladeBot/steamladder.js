@@ -1,8 +1,8 @@
 import axios from 'axios'
 
+import Region from './Region'
 import LadderType from './LadderType'
 import SteamLadderError from './SteamLadderError'
-
 export default class SteamLadderAPI {
   /**
    * Steamladder Client
@@ -75,7 +75,7 @@ export default class SteamLadderAPI {
    * @param [regionOrCountry] - Region or ISO 3166-1 alpha-2 country code to filter the ladder by
    * @returns - Returned promise
    */
-  async getLadder (type: LadderType, regionOrCountry?: string): Promise<any> {
+  async getLadder (type: LadderType, regionOrCountry?: Region | string): Promise<any> {
     return await this.get(`/ladder/${type}${regionOrCountry ? `/${regionOrCountry}` : ''}`)
   }
 }
