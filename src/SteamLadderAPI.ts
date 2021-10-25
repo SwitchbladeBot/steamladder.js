@@ -3,6 +3,8 @@ import axios from 'axios'
 import Region from './Region'
 import LadderType from './LadderType'
 import SteamLadderError from './SteamLadderError'
+import { Profile } from './types/Profile'
+
 export default class SteamLadderAPI {
   /**
    * Steamladder Client
@@ -56,7 +58,7 @@ export default class SteamLadderAPI {
    * @param steamid64 - SteamID64 of the user your want to get details about
    * @returns - Returned promise
    */
-  async getProfile (steamid64: string): Promise<any> {
+  async getProfile (steamid64: string): Promise<Profile> {
     return await this.get(`/profile/${steamid64}`)
   }
 
@@ -65,7 +67,7 @@ export default class SteamLadderAPI {
    * @param steamid64 - SteamID64 of the user your want to get updated details about
    * @returns - Returned promise
    */
-  async updateProfile (steamid64: string): Promise<any> {
+  async updateProfile (steamid64: string): Promise<Profile> {
     return await this.post(`/profile/${steamid64}/`)
   }
 
