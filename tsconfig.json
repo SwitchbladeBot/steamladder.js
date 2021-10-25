@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "ESNext",
+    "module": "CommonJS",
+    "lib": ["ESNext"],
+    "allowJs": true,
+    "checkJs": true,
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "moduleResolution": "node",
+    "types": [],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*.ts",
+  ]
+}
