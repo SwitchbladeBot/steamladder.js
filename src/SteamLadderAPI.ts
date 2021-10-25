@@ -1,5 +1,7 @@
 import axios from 'axios'
+
 import LadderType from './LadderType'
+import SteamLadderError from './SteamLadderError'
 
 export default class SteamLadderAPI {
   /**
@@ -23,6 +25,11 @@ export default class SteamLadderAPI {
         Authorization: `Token ${this.key}`
       }
     }).then(res => res.data as T)
+      .catch(error => {
+        if (error.response) throw new SteamLadderError(error.response.data?.error, error.response.status)
+
+        throw error
+      })
   }
 
   /**
@@ -37,6 +44,11 @@ export default class SteamLadderAPI {
         Authorization: `Token ${this.key}`
       }
     }).then(res => res.data as T)
+      .catch(error => {
+        if (error.response) throw new SteamLadderError(error.response.data?.error, error.response.status)
+
+        throw error
+      })
   }
 
   /**
