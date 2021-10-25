@@ -22,23 +22,34 @@
 $ npm install steamladder
 ```
 
-## Example
-Getting a profile using the steamladder package
+## Getting an API key
+Login into [SteamLadder](https://steamladder.com) using your Steam account and head over to https://steamladder.com/user/settings/api to get your API key.
+
+## Usage
+First, initialize the client using your `STEAMLADDER_API_KEY`.
 
 ```js
-const SteamLadderClient = require('steamladder')
-const steamladder = new SteamLadderClient(process.env.API_KEY)
+const { SteamLadderAPI } = require('steamladder')
 
-steamladder.getProfile('76561198156391452').then(console.log)
+const steamladder = new SteamLadderAPI('STEAMLADDER_API_KEY')
 ```
 
-Getting XP ladder from [SteamLadder](https://steamladder.com)
+Now you can use the `steamladder` methods.
 
+### Getting a profile
 ```js
-const SteamLadderClient = require('steamladder')
-const steamladder = new SteamLadderClient(process.env.API_KEY)
+steamladder.getProfile('steamid64').then((data) => console.log(data)) // Profile data
+```
 
-steamladder.getLadder('xp').then(console.log)
+### Getting a ladder
+```js
+const { LadderType, Region } = require('steamladder')
+
+steamladder.getLadder(LadderType.XP).then((data) => console.log(data)) // Using LadderType
+steamladder.getLadder('xp').then((data) => console.log(data)) // Using string
+
+steamladder.getLadder(LadderType.XP, Region.SOUTH_AMERICA).then((data) => console.log(data)) // Using region
+steamladder.getLadder(LadderType.XP, 'BR').then((data) => console.log(data)) // Using ISO 3166-1 alpha-2 country code
 ```
 
 ## Backers
