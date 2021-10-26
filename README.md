@@ -48,8 +48,9 @@ const { LadderType, Region } = require('steamladder')
 steamladder.getLadder(LadderType.XP).then((data) => console.log(data)) // Using LadderType
 steamladder.getLadder('xp').then((data) => console.log(data)) // Using string
 
-steamladder.getLadder(LadderType.XP, Region.SOUTH_AMERICA).then((data) => console.log(data)) // Using region
-steamladder.getLadder(LadderType.XP, 'BR').then((data) => console.log(data)) // Using ISO 3166-1 alpha-2 country code
+steamladder.getLadder('xp', Region.SOUTH_AMERICA).then((data) => console.log(data)) // Using region
+steamladder.getLadder('xp', 'south_america').then((data) => console.log(data)) // Using region string
+steamladder.getLadder('xp', 'BR').then((data) => console.log(data)) // Using ISO 3166-1 alpha-2 country code
 ```
 
 ## Backers
