@@ -1,5 +1,5 @@
-import { LadderRank } from './LadderRank'
-import { SteamStats } from './SteamStats'
+import type { LadderRank } from './LadderRank'
+import type { SteamStats } from './SteamStats'
 
 export interface SteamUser {
   steam_name: string

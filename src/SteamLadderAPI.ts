@@ -1,11 +1,11 @@
 import axios from 'axios'
 
-import { Regions } from './types/Region'
-import { LadderTypes, TLadderType } from './types/LadderType'
 import SteamLadderError from './SteamLadderError'
-import { Ladder } from './types/Ladder'
-import { Profile } from './types/Profile'
-import { BadgesStats, BanStats, GamesStats, PlaytimeStats } from './types/LadderSteamStats'
+import type { Regions } from './types/Region'
+import type { LadderTypes, TLadderType } from './types/LadderType'
+import type { Ladder } from './types/Ladder'
+import type { Profile } from './types/Profile'
+import type { BadgesStats, BanStats, GamesStats, PlaytimeStats } from './types/LadderSteamStats'
 
 export default class SteamLadderAPI {
   /**

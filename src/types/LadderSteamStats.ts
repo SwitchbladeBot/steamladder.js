@@ -1,4 +1,4 @@
-import { SteamStatsBadges, SteamStatsBans, SteamStatsGames } from './SteamStats'
+import type { SteamStatsBadges, SteamStatsBans, SteamStatsGames } from './SteamStats'
 
 export interface BadgesStats {
   badges: Pick<SteamStatsBadges, 'total'>

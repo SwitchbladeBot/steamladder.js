@@ -11,12 +11,12 @@ export {
 }
 
 // Types
-export * from './types/Ladder'
-export * from './types/LadderRank'
-export * from './types/LadderSteamStats'
-export * from './types/Profile'
-export * from './types/SteamStats'
+export type { Ladder, LadderPosition } from './types/Ladder'
+export type { LadderRank, LadderRankCountry, LadderRankRegion } from './types/LadderRank'
+export type { BadgesStats, BanStats, GamesStats, LadderSteamStats, PlaytimeStats, Stats } from './types/LadderSteamStats'
+export type { Profile, SteamLadderInfo, SteamUser } from './types/Profile'
+export type { SteamStats, SteamStatsBadges, SteamStatsBadgesTracking, SteamStatsBans, SteamStatsGames, SteamStatsGamesMostPlayed } from './types/SteamStats'
 
-// Enum helpers
-export * from './types/LadderType'
-export * from './types/Region'
+// Enum helper
+export type { LadderTypes, TLadderType } from './types/LadderType'
+export type { Regions, TRegion } from './types/Region'

@@ -1,6 +1,6 @@
-import { LadderTypes } from './LadderType'
-import { LadderSteamStats, Stats } from './LadderSteamStats'
-import { SteamUser } from './Profile'
+import type { LadderTypes } from './LadderType'
+import type { LadderSteamStats, Stats } from './LadderSteamStats'
+import type { SteamUser } from './Profile'
 
 export interface LadderPosition<S = Stats> {
   pos: number
