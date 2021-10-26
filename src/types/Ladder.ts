@@ -1,4 +1,4 @@
-import LadderType from '../LadderType'
+import { LadderTypes } from './LadderType'
 import { LadderSteamStats, Stats } from './LadderSteamStats'
 import { SteamUser } from './Profile'
 
@@ -8,7 +8,7 @@ export interface LadderPosition<S = Stats> {
   steam_stats: LadderSteamStats<S>
 }
 
-export interface Ladder<T extends string = string, TU extends LadderType = LadderType, S = Stats> {
+export interface Ladder<T extends string = string, TU extends LadderTypes = LadderTypes, S = Stats> {
   type: T
   type_url: TU
   country_code: null

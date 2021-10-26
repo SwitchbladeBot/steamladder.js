@@ -11,16 +11,16 @@
  * - `GAME_BAN`
  *
  * @readonly
- * @enum {string}
+ * @enum
  */
-enum LadderType {
-  XP = 'xp',
-  GAMES = 'games',
-  PLAYTIME = 'playtime',
-  BADGES = 'badges',
-  AGE = 'steam_age',
-  VAC = 'vac',
-  GAME_BAN = 'game_ban'
-}
+const LadderType = {
+  XP: 'xp',
+  GAMES: 'games',
+  PLAYTIME: 'playtime',
+  BADGES: 'badges',
+  AGE: 'steam_age',
+  VAC: 'vac',
+  GAME_BAN: 'game_ban'
+} as const
 
 export default LadderType

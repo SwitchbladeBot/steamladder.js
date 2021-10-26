@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-import Region from './Region'
-import LadderType from './LadderType'
+import { Regions } from './types/Region'
+import { LadderTypes, TLadderType } from './types/LadderType'
 import SteamLadderError from './SteamLadderError'
 import { Ladder } from './types/Ladder'
 import { Profile } from './types/Profile'
@@ -79,14 +79,14 @@ export default class SteamLadderAPI {
    * @param [regionOrCountry] - Region or ISO 3166-1 alpha-2 country code to filter the ladder by
    * @returns - Returned promise
    */
-  async getLadder (type: LadderType.AGE, regionOrCountry?: Region | string): Promise<Ladder<'A', LadderType.AGE>>
-  async getLadder (type: LadderType.BADGES, regionOrCountry?: Region | string): Promise<Ladder<'B', LadderType.BADGES, BadgesStats>>
-  async getLadder (type: LadderType.GAMES, regionOrCountry?: Region | string): Promise<Ladder<'G', LadderType.GAMES, GamesStats>>
-  async getLadder (type: LadderType.GAME_BAN, regionOrCountry?: Region | string): Promise<Ladder<'GB', LadderType.GAME_BAN, BanStats>>
-  async getLadder (type: LadderType.PLAYTIME, regionOrCountry?: Region | string): Promise<Ladder<'PT', LadderType.PLAYTIME, PlaytimeStats>>
-  async getLadder (type: LadderType.VAC, regionOrCountry?: Region | string): Promise<Ladder<'V', LadderType.VAC, BanStats>>
-  async getLadder (type: LadderType.XP, regionOrCountry?: Region | string): Promise<Ladder<'XP', LadderType.XP>>
-  async getLadder (type: LadderType, regionOrCountry?: Region | string): Promise<Ladder> {
+  async getLadder (type: TLadderType['AGE'], regionOrCountry?: Regions | string): Promise<Ladder<'A', TLadderType['AGE']>>
+  async getLadder (type: TLadderType['BADGES'], regionOrCountry?: Regions | string): Promise<Ladder<'B', TLadderType['BADGES'], BadgesStats>>
+  async getLadder (type: TLadderType['GAMES'], regionOrCountry?: Regions | string): Promise<Ladder<'G', TLadderType['GAMES'], GamesStats>>
+  async getLadder (type: TLadderType['GAME_BAN'], regionOrCountry?: Regions | string): Promise<Ladder<'GB', TLadderType['GAME_BAN'], BanStats>>
+  async getLadder (type: TLadderType['PLAYTIME'], regionOrCountry?: Regions | string): Promise<Ladder<'PT', TLadderType['PLAYTIME'], PlaytimeStats>>
+  async getLadder (type: TLadderType['VAC'], regionOrCountry?: Regions | string): Promise<Ladder<'V', TLadderType['VAC'], BanStats>>
+  async getLadder (type: TLadderType['XP'], regionOrCountry?: Regions | string): Promise<Ladder<'XP', TLadderType['XP']>>
+  async getLadder (type: LadderTypes, regionOrCountry?: Regions | string): Promise<Ladder> {
     return await this.get(`/ladder/${type}${regionOrCountry ? `/${regionOrCountry}` : ''}`)
   }
 }

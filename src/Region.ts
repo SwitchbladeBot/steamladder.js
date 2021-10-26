@@ -11,16 +11,16 @@
  * - `ANTARCTICA`
  *
  * @readonly
- * @enum {string}
+ * @enum
  */
-enum Region {
-  EUROPE = 'europe',
-  NORTH_AMERICA = 'north_america',
-  SOUTH_AMERICA = 'south_america',
-  ASIA = 'asia',
-  AFRICA = 'africa',
-  OCEANIA = 'oceania',
-  ANTARCTICA = 'antarctica'
-}
+const Region = {
+  EUROPE: 'europe',
+  NORTH_AMERICA: 'north_america',
+  SOUTH_AMERICA: 'south_america',
+  ASIA: 'asia',
+  AFRICA: 'africa',
+  OCEANIA: 'oceania',
+  ANTARCTICA: 'antarctica'
+} as const
 
 export default Region

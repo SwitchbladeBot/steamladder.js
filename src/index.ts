@@ -16,3 +16,7 @@ export * from './types/LadderRank'
 export * from './types/LadderSteamStats'
 export * from './types/Profile'
 export * from './types/SteamStats'
+
+// Enum helpers
+export * from './types/LadderType'
+export * from './types/Region'
