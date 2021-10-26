@@ -16,7 +16,7 @@
   ],
   "author": "Switchblade Team <support@switchblade.xyz>",
   "license": "MIT",
-  "homepage": "https://steamladder.switchblade.xyz/",
+  "homepage": "https://github.com/SwitchbladeBot/steamladder.js#readme",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/SwitchbladeBot/steamladder.js.git"
