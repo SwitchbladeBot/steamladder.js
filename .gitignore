@@ -63,5 +63,5 @@ typings/
 # JetBrains stuff
 .idea/
 
-# Docma build folder
-docs/
+# Build
+dist/

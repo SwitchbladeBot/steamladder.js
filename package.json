@@ -1,16 +1,12 @@
 {
   "name": "steamladder",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "Node.js wrapper for the Steam Ladder API",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build-docs": "node docs.js",
-    "test": "standard",
-    "standard-fix": "standard --fix"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/SwitchbladeBot/steamladder.js.git"
+    "build": "tsc",
+    "lint": "eslint src/**/*.ts"
   },
   "keywords": [
     "steam",
@@ -20,21 +16,28 @@
   ],
   "author": "Switchblade Team <support@switchblade.xyz>",
   "license": "MIT",
+  "homepage": "https://github.com/SwitchbladeBot/steamladder.js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SwitchbladeBot/steamladder.js.git"
+  },
   "bugs": {
     "url": "https://github.com/SwitchbladeBot/steamladder.js/issues"
   },
-  "devDependencies": {
-    "docma": "^3.2.2",
-    "dotenv": "^10.0.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-standard": "^4.1.0",
-    "standard": "^16.0.4"
-  },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "axios": "^0.23.0"
   },
-  "homepage": "https://steamladder.switchblade.xyz/"
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard-with-typescript": "^21.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "typescript": "^4.4.4"
+  }
 }
