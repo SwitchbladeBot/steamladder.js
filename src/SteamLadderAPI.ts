@@ -86,6 +86,8 @@ export default class SteamLadderAPI {
   async getLadder (type: TLadderType['VAC'], regionOrCountry?: string): Promise<Ladder<'V', TLadderType['VAC'], BanStats>>
   async getLadder (type: TLadderType['XP'], regionOrCountry?: string): Promise<Ladder<'XP', TLadderType['XP']>>
   async getLadder (type: LadderTypes, regionOrCountry?: string): Promise<Ladder> {
+    if (regionOrCountry?.length === 2) regionOrCountry = regionOrCountry.toLowerCase()
+
     return await this.get(`/ladder/${type}${regionOrCountry ? `/${regionOrCountry}` : ''}`)
   }
 }
