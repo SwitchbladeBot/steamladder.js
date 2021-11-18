@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
   testnode16:
-    name: Test node 16
+    name: Test Node 16
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
