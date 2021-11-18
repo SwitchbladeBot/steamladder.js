@@ -3,10 +3,18 @@
   "version": "2.0.2",
   "description": "Node.js wrapper for the Steam Ladder API",
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js"
+  },
   "scripts": {
-    "build": "tsc",
+    "build": "tsup",
     "lint": "eslint src/**/*.ts"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   },
   "keywords": [
     "steam",
@@ -25,7 +33,8 @@
     "url": "https://github.com/SwitchbladeBot/steamladder.js/issues"
   },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "dependencies": {
     "axios": "^0.23.0"
@@ -38,6 +47,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.1",
+    "tsup": "^5.7.2",
     "typescript": "^4.4.4"
   }
 }

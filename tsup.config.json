@@ -1,0 +1,12 @@
+{
+  "dts": true,
+  "sourcemap": true,
+  "entryPoints": ["src/index.ts"],
+  "outDir": "dist",
+  "format": ["cjs", "esm"],
+  "target": "node10",
+  "bundle": true,
+  "skipNodeModulesBundle": true,
+  "clean": true,
+  "splitting": false
+}
