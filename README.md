@@ -17,6 +17,7 @@
 </div>
 
 ## Installing
+You will need atleast **Node v10**.
 
 ```bash
 $ npm install steamladder
