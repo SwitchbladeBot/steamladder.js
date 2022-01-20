@@ -20,17 +20,36 @@ jobs:
 
       - name: Run Linting
         run: npm run lint
-  testnode10:
-    name: Test Node 10
+
+  testnode14:
+    name: Test Node 14
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install Node v10
+      - name: Install Node v14
         uses: actions/setup-node@v2
         with:
           cache: npm
-          node-version: 10
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Linting
+        run: npm run lint
+
+  testnode12:
+    name: Test Node 12
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Node v12
+        uses: actions/setup-node@v2
+        with:
+          cache: npm
+          node-version: 12
 
       - name: Install dependencies
         run: npm ci

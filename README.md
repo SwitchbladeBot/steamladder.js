@@ -17,41 +17,48 @@
 </div>
 
 ## Installing
-You will need atleast **Node v10**.
+
+You will need atleast **Node v12**.
 
 ```bash
 $ npm install steamladder
 ```
 
 ## Getting an API key
+
 Login into [SteamLadder](https://steamladder.com) using your Steam account and head over to https://steamladder.com/user/settings/api to get your API key.
 
 ## Usage
+
 First, initialize the client using your `STEAMLADDER_API_KEY`.
 
 ```js
-const { SteamLadderAPI } = require('steamladder')
+const { SteamLadderAPI } = require("steamladder");
 
-const steamladder = new SteamLadderAPI('STEAMLADDER_API_KEY')
+const steamladder = new SteamLadderAPI("STEAMLADDER_API_KEY");
 ```
 
 Now you can use the `steamladder` methods.
 
 ### Getting a profile
+
 ```js
-steamladder.getProfile('steamid64').then((data) => console.log(data)) // Profile data
+steamladder.getProfile("steamid64").then((data) => console.log(data)); // Profile data
 ```
 
 ### Getting a ladder
+
 ```js
-const { LadderType, Region } = require('steamladder')
+const { LadderType, Region } = require("steamladder");
 
-steamladder.getLadder(LadderType.XP).then((data) => console.log(data)) // Using LadderType
-steamladder.getLadder('xp').then((data) => console.log(data)) // Using string
+steamladder.getLadder(LadderType.XP).then((data) => console.log(data)); // Using LadderType
+steamladder.getLadder("xp").then((data) => console.log(data)); // Using string
 
-steamladder.getLadder('xp', Region.SOUTH_AMERICA).then((data) => console.log(data)) // Using region
-steamladder.getLadder('xp', 'south_america').then((data) => console.log(data)) // Using region string
-steamladder.getLadder('xp', 'BR').then((data) => console.log(data)) // Using ISO 3166-1 alpha-2 country code
+steamladder
+  .getLadder("xp", Region.SOUTH_AMERICA)
+  .then((data) => console.log(data)); // Using region
+steamladder.getLadder("xp", "south_america").then((data) => console.log(data)); // Using region string
+steamladder.getLadder("xp", "BR").then((data) => console.log(data)); // Using ISO 3166-1 alpha-2 country code
 ```
 
 ## Backers
@@ -88,6 +95,5 @@ Sponsors are organizations and companies that contribute to our projects with mo
 
 [backers-url]: https://opencollective.com/switchblade#backer
 [backers-badge]: https://opencollective.com/switchblade/tiers/backer/badge.svg?label=backers&color=brightgreen
-
 [sponsors-url]: https://opencollective.com/switchblade#sponsor
 [sponsors-badge]: https://opencollective.com/switchblade/tiers/sponsor/badge.svg?label=sponsors&color=brightgreen
